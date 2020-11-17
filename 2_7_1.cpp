@@ -1,26 +1,19 @@
-﻿
-
 #include <iostream>
-#include <string>
-
+#include <cmath>
 using namespace std;
-
-
-
+int a, n;
 int main()
 {
-    setlocale(LC_ALL, "rus");
-    int n;
-    cout << "Введите сторону квадрата: ";
-    cin >> n;
-    for (int i = 0; i < n; ++i) 
+    cin >> a;
+    n = sqrt(a);
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 0; j < n; ++j)
+        for (int j = 1; j <= n; j++)
         {
-             cout << '*';
-             cout << ' ';
+            cout << "*";
+            cout << " ";
         }
-        cout << '\n';
+        cout << "\n";
     }
     return 0;
 }
