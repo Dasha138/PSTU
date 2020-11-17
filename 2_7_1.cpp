@@ -1,20 +1,27 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-int a, n;
 int main()
 {
-    cin >> a;
-    n = sqrt(a);
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= n; j++)
-        {
-            cout << "*";
-            cout << " ";
-        }
-        cout << "\n";
-    }
-    return 0;
-}
 
+     int n;
+     int m; 
+
+	setlocale(LC_ALL, "RUS");
+	cin >> n;
+	m = sqrt(n);
+	if (n != m * m)
+		cout << "Невозможно построить квадрат из N звездочек";
+	else
+	{
+		for (int i = 1; i <= m; i++)
+		{
+			for (int i = 1; i <= m; i++)
+			{
+				cout << "* ";
+			}
+			cout << endl;
+		}
+	}
+	return 0;
+}
